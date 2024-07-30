@@ -1,4 +1,4 @@
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 @import "./components/heroslider";
 @import "./common";
 @import "./variables";
@@ -6,3 +6,44 @@
 @import "./components/header";
 @import "./components/footer";
 
+.pt-8 {
+    padding-top: 2.5rem !important;
+}
+
+.pb-8 {
+    padding-bottom: 2.5rem !important;
+}
+
+.pt-10 {
+    padding-top: 3.5rem !important;
+}
+
+.pb-10 {
+    padding-bottom: 3.5rem !important;
+}
+
+.rlogo {
+  transform: rotate(0deg) scale(0.8);
+  animation: rlogo 1.5s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.buttonClass {
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 35px !important;
+    border: 2px solid #ffc30c;
+    border-radius: 30px !important;
+}
+
+@keyframes rlogo {
+  from {
+    transform: rotate(0deg) scale(0.8);
+  }
+  to {
+    transform: rotate(360deg) scale(0.8);
+  }
+}

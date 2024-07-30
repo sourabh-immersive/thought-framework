@@ -40,8 +40,8 @@ const Header = () => {
                 <li className="nav-item dropdown">
                   <Link
                     className="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdownMenuLink"
+                    href="/"
+                    id="navbarDropdownMenuLink2"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -50,10 +50,10 @@ const Header = () => {
                   </Link>
                   <ul
                     className="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
+                    aria-labelledby="navbarDropdownMenuLink2"
                   >
                     <li>
-                      <Link className="dropdown-item" href="#">
+                      <Link className="dropdown-item" href="/">
                       Thought Quality
                       </Link>
                     </li>
