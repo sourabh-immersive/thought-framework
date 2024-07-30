@@ -5,6 +5,22 @@
 @import "./mixins";
 @import "./components/header";
 @import "./components/footer";
+@import "./components/typedsection";
+@import "./components/thoughtslider";
+
+/* src/App.css or a specific CSS file */
+@font-face {
+    font-family: 'LietoMeFont';
+    src: url('/fonts/Lie-to-Me-TTF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.yellow { color: #ffc30c; }
+
+.blue { color: #09a2cc; }
+
+.green { color: #8cd437; }
 
 .pt-8 {
     padding-top: 2.5rem !important;

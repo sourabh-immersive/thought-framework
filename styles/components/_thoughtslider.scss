@@ -1,0 +1,54 @@
+.thoughtSection {
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 100px;
+  }
+  .swiper-pagination-bullet {
+    width: auto;
+    background: transparent !important;
+    height: var(
+      --swiper-pagination-bullet-height,
+      var(--swiper-pagination-bullet-size, 8px)
+    );
+    display: inline-block;
+    border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+    background: var(--swiper-pagination-bullet-inactive-color, #000);
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
+  }
+
+  span.swiper-pagination-bullet {
+    color: #ababab;
+    opacity: 1 !important;
+    padding: 25px 40px;
+    border-bottom: 2px solid #e2e2e2;
+    border-radius: 0;
+    line-height: 0;
+    margin: 0 !important;
+    font-weight: 500;
+  }
+
+  span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    // color: #ffc30c !important;
+    border-bottom: 4px solid;
+  }
+
+  .slider_textbox {
+    text-align: center;
+
+    .text-contents {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+  }
+
+  .swiper-pagination-bullet-active.yellow {
+    color: #ffc30c;
+  }
+
+  .swiper-pagination-bullet-active.blue {
+    color: #09a2cc;
+  }
+
+  .swiper-pagination-bullet-active.green {
+    color: #8cd437;
+  }
+}
