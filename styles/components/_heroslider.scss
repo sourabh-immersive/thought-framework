@@ -1,0 +1,374 @@
+section.animated-section {
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+.clockwise-enter-active {
+  opacity: 0;
+}
+.swiper-slide-active .clockwise-enter-active {
+  opacity: 1;
+  width: 500px;
+  height: 500px;
+  // border-radius: 50%;
+  opacity: 1;
+  clip-path: polygon(50% 50%, 50% 0%, 50% 0%);
+  // border: 40px solid transparent;
+  display: block;
+  animation: clockwiseIn 1s 1;
+  animation-name: clockwiseIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 50%,
+    100% 100%,
+    68% 100%,
+    32% 100%,
+    0 100%,
+    0 50%,
+    0 0
+  );
+  transform-origin: center;
+}
+
+.swiper-slide-active .clockwise-enter-active {
+  animation: clockwiseIn 1s linear forwards;
+}
+
+@keyframes clockwiseIn {
+  0% {
+    clip-path: polygon(
+      50% 0,
+      50% 50%,
+      50% 0,
+      50% 0,
+      50% 0,
+      50% 0,
+      50% 0,
+      50% 0
+    );
+  }
+  22% {
+    clip-path: polygon(
+      100% 0,
+      50% 50%,
+      50% 0,
+      50% 0,
+      50% 0,
+      50% 0,
+      50% 0,
+      50% 0
+    );
+  }
+  33% {
+    clip-path: polygon(
+      100% 50%,
+      50% 50%,
+      50% 0,
+      100% 0,
+      100% 10%,
+      100% 22%,
+      100% 32%,
+      100% 25%
+    );
+  }
+  44% {
+    clip-path: polygon(
+      100% 100%,
+      50% 50%,
+      50% 0,
+      100% 0,
+      100% 10%,
+      100% 22%,
+      100% 32%,
+      100% 50%
+    );
+  }
+  55% {
+    clip-path: polygon(
+      50% 100%,
+      50% 50%,
+      50% 0,
+      100% 0,
+      100% 16%,
+      100% 50%,
+      100% 100%,
+      76% 100%
+    );
+  }
+  66% {
+    clip-path: polygon(
+      0 100%,
+      50% 50%,
+      50% 0,
+      100% 0,
+      100% 16%,
+      100% 100%,
+      78% 100%,
+      50% 100%
+    );
+  }
+  77% {
+    clip-path: polygon(
+      0 50%,
+      50% 50%,
+      50% 0,
+      100% 0,
+      100% 16%,
+      100% 100%,
+      50% 100%,
+      0 100%
+    );
+  }
+  88% {
+    clip-path: polygon(
+      0 0,
+      50% 50%,
+      50% 0,
+      100% 0,
+      100% 16%,
+      100% 100%,
+      50% 100%,
+      0 100%
+    );
+  }
+  100% {
+    clip-path: polygon(
+      50% 0,
+      50% 50%,
+      50% 0,
+      100% 0,
+      100% 16%,
+      100% 100%,
+      0 100%,
+      0 0
+    );
+  }
+}
+.swiper-slide-active .text-animation {
+  position: relative;
+  overflow: hidden;
+  height: 110vh;
+}
+.text-animation h2 {
+  opacity: 0;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 84px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 100px;
+}
+.swiper-slide-active .text-animation h2 {
+  opacity: 1;
+  position: absolute;
+  bottom: -100px;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  animation: slideIn 1.5s ease-in-out forwards,
+    slideOut 1.5s ease-in-out 4s forwards;
+  transform: translate(-50%, 50%);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 84px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 100px;
+  left: 50%;
+}
+
+.columns {
+  opacity: 0;
+}
+.swiper-slide-active .columns {
+  opacity: 1;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.swiper-slide-active .leftcome,
+.swiper-slide-active .rightcome {
+  position: absolute;
+  bottom: 110px;
+  width: 50%;
+  text-align: center;
+  color: #ffffff;
+  line-height: 25px;
+  letter-spacing: 0px;
+  font-weight: 600;
+  font-size: 24px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.swiper-slide-active .leftcome {
+  left: -50%;
+  animation: leftslideIn 1.5s ease-in-out forwards,
+    leftslideOut 1.5s ease-in-out 4s forwards;
+  text-align: right;
+}
+
+.swiper-slide-active .rightcome {
+  right: -50%;
+  animation: rightslideIn 1.5s ease-in-out forwards,
+    rightslideOut 1.5s ease-in-out 4s forwards;
+  text-align: left;
+}
+
+@keyframes slideIn {
+  0% {
+    bottom: -100px;
+    opacity: 1;
+  }
+  50% {
+    bottom: 50%;
+    opacity: 1;
+  }
+  100% {
+    bottom: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    bottom: 50%;
+    opacity: 1;
+  }
+  100% {
+    bottom: -100px;
+    opacity: 1;
+  }
+}
+
+@keyframes leftslideIn {
+  0% {
+    left: -50%;
+    opacity: 1;
+  }
+  50% {
+    left: 0%;
+    opacity: 1;
+  }
+  100% {
+    left: 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes leftslideOut {
+  0% {
+    left: 0%;
+    opacity: 1;
+  }
+  100% {
+    left: -50%;
+    opacity: 1;
+  }
+}
+
+@keyframes rightslideIn {
+  0% {
+    right: -50%;
+    opacity: 1;
+  }
+  50% {
+    right: 0%;
+    opacity: 1;
+  }
+  100% {
+    right: 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes rightslideOut {
+  0% {
+    right: 0%;
+    opacity: 1;
+  }
+  100% {
+    right: -50%;
+    opacity: 1;
+  }
+}
+
+.slider_box7 .btnWrap {
+  opacity: 0;
+}
+
+.heroSection {
+
+  .swiper-pagination-bullet {
+    border: 2px solid #ffc30c;
+    background: transparent !important;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: #ffc30c !important;
+}
+}
+
+.swiper-slide-active .slider_box7 {
+  overflow: hidden !important;
+  width: 100%;
+  height: 110vh;
+
+  .btnWrap {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+
+    a.buttonLink {
+      background: #ffc30c;
+      color: #000000;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 10px 30px;
+      border: 2px solid #ffc30c;
+      border-radius: 30px;
+
+      &:hover {
+        background: transparent;
+        color: #ffc30c;
+      }
+    }
+  }
+}
+#particles-js {
+  //   position: relative;
+  //   width: 100%;
+  //   height: 100%;
+  //   top: 0;
+  //   left: 0;
+  background: #000000;
+  height: 110vh;
+  margin-top: -71px;
+}
+canvas.particles-js-canvas-el {
+  position: absolute;
+  width: 100% !important;
+  height: 110vh !important;
+  top: 0;
+}
