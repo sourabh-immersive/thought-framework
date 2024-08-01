@@ -1,0 +1,88 @@
+.reviewSection {
+    background: #FAFAFA;
+    padding: 60px 0;
+
+    .slider_reviewWrap {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    
+    .innerWrap {
+        // background: url(/home/review/bg-circle-blue.svg) no-repeat center;
+        background-size: contain !important;
+        position: relative;
+        text-align: center;
+
+        img.profileimg {
+            border-radius: 100%;
+            padding: 40px;
+        }
+
+        img.reviewIcon.leftTop {
+            position: absolute;
+            width: 115px;
+            height: auto;
+            top: 50px;
+            left: 40px;
+        }
+
+        img.reviewIcon.rightBottom {
+            position: absolute;
+            width: 115px;
+            height: auto;
+            bottom: 50px;
+            right: 40px;
+        }
+    }
+
+    .imgBox {
+        position: relative;
+        padding: 25px;
+    }
+
+    img.bg-dotted.top {
+        position: absolute;
+        width: 350px;
+        right: 0;
+    }
+    img.bg-dotted.bottom {
+        position: absolute;
+        width: 350px;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .contentWtap {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        margin-left: 60px;
+
+        p, .reviewPar {
+            font-size: 16px;
+            color: #212529;
+            font-style: italic;
+            line-height: 1.8;
+        }
+
+        p.subt {
+            color: #040423;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 19px;
+            font-weight: 600;
+            width: 100%;
+            font-style: italic;
+        }
+    }
+
+    .swiper-button-prev:after, .swiper-button-next:after {
+        font-size: 20px;
+        font-weight: 700;
+        color: #000000;
+    }
+    
+}

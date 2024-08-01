@@ -7,35 +7,55 @@
 @import "./components/footer";
 @import "./components/typedsection";
 @import "./components/thoughtslider";
+@import "./components/consultingsection";
+@import "./components/clientsection";
+@import "./components/reviewsection";
+@import "./components/whysection";
 
-/* src/App.css or a specific CSS file */
+
 @font-face {
-    font-family: 'LietoMeFont';
-    src: url('/fonts/Lie-to-Me-TTF.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "LietoMeFont";
+  src: url("/fonts/Lie-to-Me-TTF.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
-.yellow { color: #ffc30c; }
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
 
-.blue { color: #09a2cc; }
+.yellow {
+  color: #ffc30c;
+}
 
-.green { color: #8cd437; }
+.blue {
+  color: #09a2cc;
+}
+
+.green {
+  color: #8cd437;
+}
+
+.black {
+  color: #020b19;
+}
 
 .pt-8 {
-    padding-top: 2.5rem !important;
+  padding-top: 2.5rem !important;
 }
 
 .pb-8 {
-    padding-bottom: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
 }
 
 .pt-10 {
-    padding-top: 3.5rem !important;
+  padding-top: 3.5rem !important;
 }
 
 .pb-10 {
-    padding-bottom: 3.5rem !important;
+  padding-bottom: 3.5rem !important;
 }
 
 .rlogo {
@@ -46,13 +66,13 @@
 }
 
 .buttonClass {
-    background: #000000;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 8px 35px !important;
-    border: 2px solid #ffc30c;
-    border-radius: 30px !important;
+  background: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 35px !important;
+  border: 2px solid #ffc30c;
+  border-radius: 30px !important;
 }
 
 @keyframes rlogo {

@@ -1,0 +1,51 @@
+.consultingSection {
+  background: url("/home/tf-bg.png") no-repeat center;
+  background-size: cover;
+  position: relative;
+  padding: 0px 0;
+
+  .content {
+    position: relative;
+    height: 610px;
+    padding-top: 60px;
+
+    h3 {
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    p {
+        width: 340px;
+        color: #ffffff;
+        font-size: 17px;
+    }
+
+    button.btn.btn-outline-light {
+        border: 3px solid #000000;
+        border-radius: 30px;
+        padding: 10px 27px;
+        color: #000000;
+        font-weight: 600;
+        margin-top: 50px;
+
+        &:hover {
+            background: #000000;
+            color: #ffffff;
+        }
+    }
+
+    img.bottom-image.left {
+        position: absolute;
+        bottom: 0;
+        right: -8px;
+        width: 440px;
+    }
+
+    img.bottom-image.right {
+        position: absolute;
+        left: -16px;
+        width: 127px;
+        bottom: 0;
+    }
+}
+}

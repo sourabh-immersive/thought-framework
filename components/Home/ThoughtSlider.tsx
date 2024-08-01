@@ -79,13 +79,14 @@ export default function ThoughtSlider() {
   return (
     <div className="thoughtSection">
       <Container>
+        <h2>LET'S TALK BUSINESS IN</h2>
         <Swiper
           spaceBetween={0}
           slidesPerView={1}
-          navigation={true}
+          // navigation={true}
           autoplay={{
             delay: 5500,
-            disableOnInteraction: true,
+            disableOnInteraction: false,
           }}
           pagination={{
             clickable: true,
@@ -114,7 +115,7 @@ export default function ThoughtSlider() {
                 </section>
                 <section className="text-contents">
                   <p>{slide.desc}</p>
-                  <div className="btncolumns">
+                  <div className={`btncolumns ${slides[index].color}`}>
                     <Link
                       className="ts-btn readMoreBtn"
                       href={slide.readMoreLink}

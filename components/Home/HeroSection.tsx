@@ -61,10 +61,10 @@ export default function HeroSection() {
         <Swiper
           spaceBetween={0}
           slidesPerView={1}
-          navigation={true}
+          // navigation={true}
           autoplay={{
             delay: 5500,
-            disableOnInteraction: true,
+            disableOnInteraction: false,
           }}
           effect={"fade"}
           pagination={{ clickable: true }}
