@@ -1,6 +1,7 @@
-'use client'
-
+import { ClientsSection } from "@/components/Home/ClientsSection";
+import { ConsultingSection } from "@/components/Home/ConsultingSection";
 import HeroSection from "@/components/Home/HeroSection";
+import { ReviewSection } from "@/components/Home/ReviewSection";
 import ThoughtSlider from "@/components/Home/ThoughtSlider";
 import TypedSection from "@/components/Home/TypedSection";
 
@@ -14,12 +15,12 @@ export default function Home() {
       <HeroSection />
       <TypedSection texts={texts} period={period} beforeText={beforeText} />
       <ThoughtSlider />
+      <ConsultingSection />
+      <ClientsSection />
+      <ReviewSection />
       <section>
-        <h1>Section 1</h1>
-        <h1>Section 2</h1>
-        <h1>Section 3</h1>
-        <h1>Section 4</h1>
-        <h1>Section 5</h1>
+        <br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br />
       </section>
     </main>
   );

@@ -1,6 +1,14 @@
 .thoughtSection {
+  padding: 60px 0;
+  
   .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 100px;
+    bottom: 150px;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
   }
   .swiper-pagination-bullet {
     width: auto;
@@ -37,6 +45,7 @@
     .text-contents {
       max-width: 720px;
       margin: 0 auto;
+      margin-top: 50px;
     }
   }
 
@@ -50,5 +59,116 @@
 
   .swiper-pagination-bullet-active.green {
     color: #8cd437;
+  }
+
+  .btncolumns {
+    display: block;
+    min-height: 41px;
+    margin-top: 40px !important;
+
+    a.ts-btn {
+      padding: 10px 15px;
+      border: 2px solid;
+      margin: 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    &.yellow {
+      a.ts-btn.readMoreBtn {
+        background: #ffc30c;
+        border-color: #ffc30c;
+        color: #ffffff;
+        box-shadow: 2px 2px 0 #ffc30c, -3px -3px 0 #ffc30c, -3px 3px 0 #ffc30c,
+          3px -3px 0 #ffc30c;
+
+        &:hover {
+          background: #ffffff;
+          color: #ffc30c;
+          box-shadow: 12px 5px 0 #ffc30c82, -12px -5px 0 #ffc30ca3 !important;
+          background-color: white !important;
+          color: #ffc30b !important;
+        }
+      }
+      a.ts-btn.letstalkBtn {
+        border-color: #ffc30c;
+        color: #ffc30c;
+        box-shadow: 2px 2px 0 #ffc30c, -3px -3px 0 #ffc30c, -3px 3px 0 #ffc30c,
+          3px -3px 0 #ffc30c;
+
+        &:hover {
+          background: #ffffff;
+          color: #ffc30c;
+          box-shadow: 12px 5px 0 #ffc30c82, -12px -5px 0 #ffc30ca3 !important;
+          background-color: white !important;
+          color: #ffc30b !important;
+        }
+      }
+    }
+
+    &.blue {
+      a.ts-btn.readMoreBtn {
+        background: #09a2cc;
+        border-color: #09a2cc;
+        color: #ffffff;
+        box-shadow: 2px 2px 0 #09a2cc, -3px -3px 0 #09a2cc, -3px 3px 0 #09a2cc,
+          3px -3px 0 #09a2cc;
+
+        &:hover {
+          background: #ffffff;
+          color: #09a2cc;
+          box-shadow: 12px 5px 0 #09a2cc, -12px -5px 0 #09a2cc !important;
+          background-color: white !important;
+          color: #09a2cc !important;
+        }
+      }
+      a.ts-btn.letstalkBtn {
+        border-color: #09a2cc;
+        color: #09a2cc;
+        box-shadow: 2px 2px 0 #09a2cc, -3px -3px 0 #09a2cc, -3px 3px 0 #09a2cc,
+          3px -3px 0 #09a2cc;
+
+        &:hover {
+          background: #ffffff;
+          color: #09a2cc;
+          box-shadow: 12px 5px 0 #09a2cc, -12px -5px 0 #09a2cc !important;
+          background-color: white !important;
+          color: #09a2cc !important;
+        }
+      }
+    }
+
+    &.green {
+      a.ts-btn.readMoreBtn {
+        background: #8cd437;
+        border-color: #8cd437;
+        color: #ffffff;
+        box-shadow: 2px 2px 0 #8cd437, -3px -3px 0 #8cd437, -3px 3px 0 #8cd437,
+          3px -3px 0 #8cd437;
+
+        &:hover {
+          background: #ffffff;
+          color: #8cd437;
+          box-shadow: 12px 5px 0 #8cd437, -12px -5px 0 #8cd437 !important;
+          background-color: white !important;
+          color: #8cd437 !important;
+        }
+      }
+      a.ts-btn.letstalkBtn {
+        border-color: #8cd437;
+        color: #8cd437;
+        box-shadow: 2px 2px 0 #8cd437, -3px -3px 0 #8cd437, -3px 3px 0 #8cd437,
+          3px -3px 0 #8cd437;
+
+        &:hover {
+          background: #ffffff;
+          color: #8cd437;
+          box-shadow: 12px 5px 0 #8cd437, -12px -5px 0 #8cd437 !important;
+          background-color: white !important;
+          color: #8cd437 !important;
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,29 @@
+.clientsSection {
+    padding: 60px 0;
+    text-align: center;
+
+    h2 {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    h4 {
+        font-size: 28px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+    }
+
+    .swiper-wrapper {
+        transition-timing-function: linear;
+        align-items: center;
+
+        img.thought-slider-img {
+            filter: grayscale(1);
+
+            &:hover {
+                filter: grayscale(0);
+            }
+        }
+    }
+}
