@@ -332,7 +332,7 @@ section.animated-section {
 .swiper-slide-active .slider_box7 {
   overflow: hidden !important;
   width: 100%;
-  height: 110vh;
+  height: 100vh;
 
   .btnWrap {
     position: absolute;
@@ -364,12 +364,12 @@ section.animated-section {
   //   top: 0;
   //   left: 0;
   background: #000000;
-  height: 110vh;
+  height: 100vh;
   margin-top: -71px;
 }
 canvas.particles-js-canvas-el {
   position: absolute;
   width: 100% !important;
-  height: 110vh !important;
+  height: 100vh !important;
   top: 0;
 }
