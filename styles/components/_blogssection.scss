@@ -1,5 +1,19 @@
 .blogsSection {
     padding: 60px 0;
+    text-align: center;
+
+    h2 {
+        text-align: center;
+        font-weight: 600;
+    }
+
+    button.btn.yellow-btn {
+        background-color: #ffc30c;
+        border-radius: 30px;
+        padding: 14px 40px 14px 40px;
+        color: #000000;
+    }
+
     .slider_post {
         border-radius: 20px 20px 20px 20px;
         box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%);
@@ -14,9 +28,10 @@
 
         .blogContetn {
             padding: 10px 30px 30px 30px;
-            min-height: 192px;
+            min-height: 170px;
+            text-align: left;
 
-            h2 {
+            h3 {
                 color: #2b2d42;
                 background-image: linear-gradient(currentColor, currentColor);
                 background-position: 0% 100%;

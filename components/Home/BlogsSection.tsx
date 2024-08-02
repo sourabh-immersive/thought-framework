@@ -31,6 +31,7 @@ const BlogsSection: React.FC<BlogProps> = ({ initialPosts }) => {
     <div className="blogsSection">
       <Container>
         <div className="clientWrap11">
+          <h2 className="yellow">Recommended Blogs</h2>
           <Swiper
             spaceBetween={20}
             slidesPerView={3}
@@ -43,23 +44,31 @@ const BlogsSection: React.FC<BlogProps> = ({ initialPosts }) => {
             modules={[Autoplay, FreeMode, A11y]}
             className={"blogsSlider4 mt-4"}
           >
-              {initialPosts.map((post, index) => (
-                <SwiperSlide key={index}>
-                  <div className="slider_post">
-                    <Image
-                      src={post.featured_image_url}
-                      width={600}
-                      height={250}
-                      alt={post.title.rendered}
+            {initialPosts.map((post, index) => (
+              <SwiperSlide key={index}>
+                <div className="slider_post">
+                  <Image
+                    src={post.featured_image_url}
+                    width={600}
+                    height={250}
+                    alt={post.title.rendered}
+                  />
+                  <div className="blogContetn">
+                    <h3>{post.title.rendered}</h3>
+                    <div
+                      className="blogPar"
+                      dangerouslySetInnerHTML={{
+                        __html: limitWords(post.excerpt.rendered, 16),
+                      }}
                     />
-                    <div className="blogContetn">
-                    <h2>{post.title.rendered}</h2>
-                    <div className="blogPar" dangerouslySetInnerHTML={{__html: limitWords(post.excerpt.rendered, 16) }} />
-                    </div>
                   </div>
-                </SwiperSlide>
-              ))}
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
+          <Link href="/">
+            <button className="btn yellow-btn">View All Blogs</button>
+          </Link>
         </div>
       </Container>
     </div>
