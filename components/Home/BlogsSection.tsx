@@ -9,6 +9,7 @@ import "swiper/css/effect-fade";
 import { FreeMode, EffectFade, Autoplay, A11y } from "swiper/modules";
 import Link from "next/link";
 import Image from "next/image";
+import limitWords from "@/utils/limitWords";
 
 interface Post {
   title: {
@@ -27,7 +28,7 @@ interface BlogProps {
 
 const BlogsSection: React.FC<BlogProps> = ({ initialPosts }) => {
   return (
-    <div className="whySection">
+    <div className="blogsSection">
       <Container>
         <div className="clientWrap11">
           <Swiper
@@ -51,8 +52,10 @@ const BlogsSection: React.FC<BlogProps> = ({ initialPosts }) => {
                       height={250}
                       alt={post.title.rendered}
                     />
+                    <div className="blogContetn">
                     <h2>{post.title.rendered}</h2>
-                    <div className="blogPar mb-4" dangerouslySetInnerHTML={{__html: post.excerpt.rendered}} />
+                    <div className="blogPar" dangerouslySetInnerHTML={{__html: limitWords(post.excerpt.rendered, 16) }} />
+                    </div>
                   </div>
                 </SwiperSlide>
               ))}

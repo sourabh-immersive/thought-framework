@@ -29,10 +29,6 @@ export default async function Home() {
       <ReviewSection />
       <WhySection />
       <BlogsSection initialPosts={initialPosts} />
-      <section>
-        <br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br />
-      </section>
     </main>
   );
 }
