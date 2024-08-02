@@ -256,11 +256,11 @@ const Footer: React.FC = () => {
           <p>Hire A Dedicated Team Now!</p>
           <form className="footerForm" method="post" name="cta_footer">
             <div className="row">
-              <div className="col-md-4">
+              <div className="col-md-4 ">
                 <label>Enter your full name</label>
                 <input type="text" name="name" placeholder="Name*" />
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4 ">
                 <label>Enter your email</label>
                 <input type="email" name="email" placeholder="Email*" />
               </div>

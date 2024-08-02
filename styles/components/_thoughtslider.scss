@@ -1,13 +1,17 @@
 .thoughtSection {
   padding: 60px 0;
+  background: #FAFAFA;
   
   .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 150px;
   }
 
-  section.thought-Imgsection.mb-4 {
-    min-height: 332px;
-}
+  @media screen and (min-width: 767px) {
+    section.thought-Imgsection.mb-4 {
+      min-height: 332px;
+    }
+  }
+  
 
   h2 {
     font-size: 24px;
@@ -51,6 +55,18 @@
       margin: 0 auto;
       margin-top: 50px;
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+      bottom: 185px;
+    }
+
+    .slider_textbox .text-contents {
+      max-width: 720px;
+      margin: 0 auto;
+      margin-top: 155px;
+  }
   }
 
   .swiper-pagination-bullet-active.yellow {
@@ -175,4 +191,8 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 768px) {
+    
 }

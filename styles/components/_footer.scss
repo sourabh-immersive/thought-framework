@@ -26,6 +26,23 @@
       }
     }
 
+    @media screen and (max-width: 767px) {
+
+      .d-flex {
+        display: flex !important;
+        flex-wrap: wrap;
+      }
+
+      ul#footerMenu {
+        overflow: scroll;
+      }
+
+      ul#footerMenu li.menu-item.p-2 {
+        padding: 5px 20px !important;
+      }
+
+    }
+
     .social-icons {
       svg {
         width: 30px;
@@ -91,5 +108,15 @@
         width: max-content !important;
       }
     }
+
+    @media screen and (max-width: 767px) {
+
+      input {
+        margin-bottom: 10px;
+      }
+
+    }
+
+
   }
 }

@@ -79,7 +79,7 @@ export default function ThoughtSlider() {
   return (
     <div className="thoughtSection">
       <Container>
-        <h2>LET{"'"}S TALK BUSINESS IN</h2>
+        <h2 className="mb-4">LET{"'"}S TALK BUSINESS IN</h2>
         <Swiper
           spaceBetween={0}
           slidesPerView={1}

@@ -5,4 +5,11 @@ header {
     .nav-link {
         margin: 0px 10px;
     }
+    a.navbar-brand {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
 }

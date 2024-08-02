@@ -43,6 +43,20 @@ const BlogsSection: React.FC<BlogProps> = ({ initialPosts }) => {
             scrollbar={{ draggable: true }}
             modules={[Autoplay, FreeMode, A11y]}
             className={"blogsSlider4 mt-4"}
+            breakpoints={{
+              // When window width is >= 640px (tablet)
+              640: {
+                slidesPerView: 2,
+              },
+              // When window width is >= 1024px (default)
+              1024: {
+                slidesPerView: 3,
+              },
+              // When window width is < 640px (mobile)
+              0: {
+                slidesPerView: 1,
+              }
+            }}
           >
             {initialPosts.map((post, index) => (
               <SwiperSlide key={index}>
