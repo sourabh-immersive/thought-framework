@@ -35,10 +35,11 @@ const BlogsSection: React.FC<BlogProps> = ({ initialPosts }) => {
           <Swiper
             spaceBetween={20}
             slidesPerView={3}
-            // autoplay={{
-            //   delay: 2000,
-            //   disableOnInteraction: false,
-            // }}
+            // navigation={true}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
             loop={true}
             scrollbar={{ draggable: true }}
             modules={[Autoplay, FreeMode, A11y]}

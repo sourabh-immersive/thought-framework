@@ -84,10 +84,10 @@ export default function ThoughtSlider() {
           spaceBetween={0}
           slidesPerView={1}
           // navigation={true}
-          // autoplay={{
-          //   delay: 5500,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 5500,
+            disableOnInteraction: false,
+          }}
           pagination={{
             clickable: true,
             renderBullet: (index, className) => {
